@@ -19,7 +19,7 @@ export const App = () => (
             Home
           </NavLink>
 
-          <NavLink className={getLinkClass} to="../people" relative="path">
+          <NavLink className={getLinkClass} to="../people">
             People
           </NavLink>
         </div>

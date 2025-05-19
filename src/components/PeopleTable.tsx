@@ -18,8 +18,6 @@ export const PeopleTable = () => {
 
     if (per) {
       navigator(`../${per.slug}`);
-    } else {
-      navigator(`..`);
     }
   };
 
