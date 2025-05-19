@@ -7,6 +7,10 @@ type PersonLinkProps = {
   getPerson: (name: string) => void;
 };
 
+const getLinkStyle = (sex: string) => ({
+  color: sex === 'f' ? 'red' : undefined,
+});
+
 export const PersonLink: React.FC<PersonLinkProps> = ({
   person,
   getPerson,
@@ -22,7 +26,9 @@ export const PersonLink: React.FC<PersonLinkProps> = ({
       })}
     >
       <td>
-        <Link to={`../${person.slug}`}>{person.name}</Link>
+        <Link to={`../${person.slug}`} style={getLinkStyle(person.sex)}>
+          {person.name}
+        </Link>
       </td>
       <td>{person.sex}</td>
       <td>{person.born}</td>
