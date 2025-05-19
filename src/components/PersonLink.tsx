@@ -26,7 +26,7 @@ export const PersonLink: React.FC<PersonLinkProps> = ({
       })}
     >
       <td>
-        <Link to={`../${person.slug}`} style={getLinkStyle(person.sex)}>
+        <Link to={`/people/${person.slug}`} style={getLinkStyle(person.sex)}>
           {person.name}
         </Link>
       </td>

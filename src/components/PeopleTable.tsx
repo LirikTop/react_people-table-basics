@@ -17,7 +17,7 @@ export const PeopleTable = () => {
     const per = people.find(p => p.name === name);
 
     if (per) {
-      navigator(`../${per.slug}`);
+      navigator(`/people/${per.slug}`);
     }
   };
 
